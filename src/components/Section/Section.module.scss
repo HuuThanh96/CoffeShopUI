@@ -1,0 +1,42 @@
+.section {
+    width: 100%;
+    padding-top: 30px;
+    background-color: var(--main-gray-light);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    font-family: var(--main-font-coffee);
+    margin: 0;
+    flex: 1;
+}
+.heading::before {
+    content: '';
+    flex: 1;
+    margin-right: 20px;
+    transform: translateY(50%);
+    border-top: 1px solid var(--main-light-color);
+}
+.heading::after {
+    content: '';
+    flex: 1;
+    margin-left: 20px;
+    transform: translateY(50%);
+    border-top: 1px solid var(--main-light-color);
+}
+
+// backgound-img
+.background {
+    background-image: url(https://www.minhtiencoffee.com/wp-content/themes/minhtien/assets/imgs/tmp/benvung.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background .heading {
+    color: white;
+}

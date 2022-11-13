@@ -1,0 +1,117 @@
+.section-value {
+    width: 100%;
+    padding-top: 30px;
+    background-color: var(--main-gray-light);
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-text-color);
+    font-family: var(--main-font-coffee);
+    margin: 0;
+    flex: 1;
+}
+.heading::before {
+    content: '';
+    flex: 1;
+    margin-right: 20px;
+    transform: translateY(50%);
+    border-top: 1px solid var(--main-light-color);
+}
+.heading::after {
+    content: '';
+    flex: 1;
+    margin-left: 20px;
+    transform: translateY(50%);
+    border-top: 1px solid var(--main-light-color);
+}
+
+.container {
+    width: 100%;
+    min-height: 1700px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 160px;
+    display: flex;
+}
+
+//slideindex
+
+.wrap-slide {
+    width: 115px;
+    max-height: 400px;
+    padding-bottom: 30px;
+    color: var(--main-font-coffee);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slide-number {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 75px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-family: var(--main-font-coffee);
+    text-shadow: -1px 0 var(--main-site-bakground), 0 1px var(--main-site-bakground), 1px 0 var(--main-site-bakground),
+        0 -1px var(--main-site-bakground);
+    margin: 0;
+}
+
+//silde actived
+.active {
+    color: var(--main-site-bakground);
+}
+
+//detail
+.wrap-detail {
+    width: 100%;
+    max-height: 425px;
+}
+
+.detail {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.value {
+    max-width: 433px;
+    flex: 1;
+}
+
+.title {
+    color: var(--main-site-bakground);
+    line-height: 50px;
+    font-family: var(--main-font-origin);
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.content {
+    color: var(--main-text-color);
+    font-family: var(--main-font-coffee);
+    font-size: 16px;
+    word-spacing: 1px;
+    opacity: 0.9;
+    margin-bottom: 60px;
+}
+
+.Wrap-img {
+    max-width: 548px;
+    margin-bottom: 60px;
+    object-fit: cover;
+    flex: 1;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}

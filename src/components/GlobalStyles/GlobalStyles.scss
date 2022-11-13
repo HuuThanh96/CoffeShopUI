@@ -1,0 +1,55 @@
+@import 'normalize.css';
+
+// Fonts emmbeded
+@font-face {
+    font-family: iCielIdealSans;
+    src: url('/assets/fonts/iCielIdealSans-Book.0a40bdaa9972674f5e0f.woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: iCielIdealSans;
+    src: url('/assets/fonts/iCielIdealSans-Medium.d7990bcdcdb5b3b09952.otf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: iCielIdealSans;
+    src: url('/assets/fonts/iCielIdealSans-Semibold.ddbbf8384e7542007bb2.woff2');
+    font-weight: 700;
+}
+@font-face {
+    font-family: iCielProza;
+    src: url('/assets/fonts/iCielProza-SemiBold.5320f3c721432dd16096.woff2');
+    font-weight: 700;
+}
+
+:root {
+    -webkit-font-smoothing: antialiased;
+    --main-font-coffee: iCielIdealSans, sans-serif;
+    --main-site-bakground: #076836;
+    --main-second-site-background: #2c2b2a;
+    --main-site-coffee-color: #503629;
+    --main-light-color: #d4ca9f;
+    --main-gray-light: #fafafa;
+    --main-text-color: #2d2c2c;
+    --main-single-color: #ef4136;
+    --main-font-origin: iCielProza, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--main-font-coffee);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--webkit-font-smoothing);
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+}

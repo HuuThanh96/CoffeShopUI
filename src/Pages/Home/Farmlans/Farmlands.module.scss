@@ -1,0 +1,125 @@
+.farmlands-section {
+    width: 100%;
+    max-height: 810px;
+    padding-top: 30px;
+    background-color: var(--main-gray-light);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-text-color);
+    font-family: var(--main-font-coffee);
+    margin: 0;
+    flex: 1;
+}
+.heading::before {
+    content: '';
+    flex: 1;
+    margin-right: 20px;
+    transform: translateY(50%);
+    border-top: 1px solid var(--main-light-color);
+}
+.heading::after {
+    content: '';
+    flex: 1;
+    margin-left: 20px;
+    transform: translateY(50%);
+    border-top: 1px solid var(--main-light-color);
+}
+
+.container {
+    width: 100%;
+    min-height: 804px;
+    padding: 60px 250px 160px 230px;
+}
+
+.slides-land {
+    width: 100%;
+    height: 584px;
+}
+
+//animation
+@keyframes fadeIn {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+.item {
+    display: none;
+    animation: fadeIn 3s linear;
+}
+
+.active {
+    display: block;
+}
+
+.wrapper-img {
+    // max-width: 714px;
+    max-width: 800px;
+    min-height: 492px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('https://www.minhtiencoffee.com/wp-content/uploads/2020/08/dienbien.svg');
+    background-size: cover;
+}
+
+.img {
+    width: 360px;
+    height: 370px;
+
+    animation: fadeIn 3s ease infinite;
+}
+
+.detail {
+    height: 73px;
+    display: flex;
+}
+
+.name {
+    width: 456px;
+    color: var(--main-site-bakground);
+    font-family: var(--main-font-coffee);
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.detail-item {
+    width: 210px;
+    margin-right: 25px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+}
+.title {
+    line-height: 20px;
+    font-size: 16px;
+    font-family: var(--main-font-coffee);
+    color: var(--main-text-color);
+    margin-top: 0;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+.value {
+    line-height: 20px;
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-family: var(--main-font-coffee);
+    margin-bottom: 15px;
+    color: var(--main-text-color);
+    opacity: 0.8;
+}
