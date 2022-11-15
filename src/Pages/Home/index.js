@@ -10,6 +10,7 @@ import Sustainablity from './Sustainablity/Sustainablity';
 import Original from './Original/Original';
 import Shop from './Shop/Shop';
 import New from './News/New';
+import Section from '../../components/Section/Section';
 
 const cx = classNames.bind(style);
 function Home() {
@@ -45,6 +46,8 @@ function Home() {
                     <video
                         ref={btnElm}
                         className={cx('video-intro')}
+                        autoPlay
+                        muted
                         loop
                         poster="https://www.minhtiencoffee.com/wp-content/uploads/2020/06/shutterstock_484936312_huge.jpg"
                     >
@@ -52,12 +55,24 @@ function Home() {
                     </video>
                 </div>
             </div>
-            <Products />
-            <Farmlands />
-            <Sustainablity />
-            <Original />
-            <Shop />
-            <New />
+            <Section heading="PRODUCTS">
+                <Products />
+            </Section>
+            <Section heading="FARMLANDS">
+                <Farmlands />
+            </Section>
+            <Section heading="SUSTAINABLE VALUE">
+                <Sustainablity />
+            </Section>
+            <Section heading="ORIGINAL VALUE">
+                <Original />
+            </Section>
+            <Section heading="COFFEE SHOP">
+                <Shop />
+            </Section>
+            <Section heading="NEWS">
+                <New />
+            </Section>
         </div>
     );
 }

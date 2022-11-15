@@ -72,29 +72,26 @@ function Original() {
     }, [valueScroll]);
 
     return (
-        <div className={cx('section-value')}>
-            <h3 className={cx('heading')}>ORIGINAL VALUE</h3>
-            <div className={cx('container')}>
-                <div className={cx('wrap-slide')}>
-                    <div style={{ transform: ` translatey(${valueScroll}px) ` }} className={cx('slide')}>
-                        {originData.map((origin, i) => {
-                            let classes = '';
-                            if (currentIndex === i) {
-                                classes = 'active';
-                            }
-                            return (
-                                <a key={origin.index} href={`#${origin.index}`} className={cx('slide-number', classes)}>
-                                    {origin.index}
-                                </a>
-                            );
-                        })}
-                    </div>
-                </div>
-                <div className={cx('wrap-detail')}>
-                    {originData.map((origin) => {
-                        return <OriginItem key={origin.title} data={origin} />;
+        <div className={cx('container')}>
+            <div className={cx('wrap-slide')}>
+                <div style={{ transform: ` translatey(${valueScroll}px) ` }} className={cx('slide')}>
+                    {originData.map((origin, i) => {
+                        let classes = '';
+                        if (currentIndex === i) {
+                            classes = 'active';
+                        }
+                        return (
+                            <a key={origin.index} href={`#${origin.index}`} className={cx('slide-number', classes)}>
+                                {origin.index}
+                            </a>
+                        );
                     })}
                 </div>
+            </div>
+            <div className={cx('wrap-detail')}>
+                {originData.map((origin) => {
+                    return <OriginItem key={origin.title} data={origin} />;
+                })}
             </div>
         </div>
     );

@@ -6,10 +6,9 @@ import style from './Shop.module.scss';
 
 const cx = classNames.bind(style);
 
-function Shop() {
+function Shop({ hidren }) {
     return (
-        <div className={cx('shop-section')}>
-            <h3 className={cx('heading')}>COFFEE SHOP</h3>
+        <>
             <div className={cx('container')}>
                 <div className={cx('info-list')}>
                     <div className={cx('info-item')}>
@@ -62,13 +61,13 @@ function Shop() {
                     </div>
                 </div>
             </div>
-            <p className={cx('footer')}>
+            <p className={cx('footer', { hidren })}>
                 Starting the journey to bring genuine happiness from original value to the people, in 2000, Minh Tien
                 was founded with the desire of raising the value of Vietnam’s coffee beans. With the sustainable farming
                 model in the independent raw materials, Minh Tien high-quality coffee beans which meet the international
                 standards have won the export partners’ and the coffee lovers’ hearts all around the world.
             </p>
-        </div>
+        </>
     );
 }
 

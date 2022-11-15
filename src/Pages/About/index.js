@@ -14,7 +14,7 @@ function About() {
     return (
         <>
             <Banner>
-                <video autoPlay loop className={cx('wrap-video')}>
+                <video autoPlay loop muted className={cx('wrap-video')}>
                     <source
                         className={cx('video-intro')}
                         src="https://www.minhtiencoffee.com/wp-content/uploads/2020/06/TVC_30s_Minh-Ti%E1%BA%BFn_1.mp4"

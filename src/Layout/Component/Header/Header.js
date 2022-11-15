@@ -23,8 +23,8 @@ const menuItems = [
         title: 'Product',
         path: routes.product,
         data: [
-            { src: '', title: 'ROASTED GROUND COFFILIA' },
-            { src: '', title: 'COFFILIA INSTANT COFFEE' },
+            { src: '#roasted', title: 'ROASTED GROUND COFFILIA' },
+            { src: '#instant', title: 'COFFILIA INSTANT COFFEE' },
         ],
     },
     {

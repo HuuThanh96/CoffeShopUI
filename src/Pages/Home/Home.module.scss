@@ -2,24 +2,20 @@
     width: 100%;
     padding-top: 200px;
 }
-
-.intro {
-    width: 100%;
-    background-color: var(--main-site-bakground);
-    overflow: hidden;
-}
-
 .wrapper-intro-img {
     width: 100%;
     display: flex;
     justify-content: center;
+    .intro-img {
+        width: 303px;
+        height: 303px;
+    }
 }
 
-.intro-img {
-    width: 303px;
-    height: 303px;
+.intro {
+    width: 100%;
+    height: 100%;
 }
-
 .intro-text {
     color: var(--main-gray-light);
     margin-bottom: 80px;

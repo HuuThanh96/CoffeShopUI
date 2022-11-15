@@ -28,14 +28,11 @@ const newsData = [
 const cx = classNames.bind(style);
 function New() {
     return (
-        <div className={cx('section-news')}>
-            <h3 className={cx('heading')}>NEWS</h3>
-            <div className={cx('container')}>
-                <div className={cx('new-items')}>
-                    {newsData.map((item) => {
-                        return <NewItem key={item.time} data={item} />;
-                    })}
-                </div>
+        <div className={cx('container')}>
+            <div className={cx('new-items')}>
+                {newsData.map((item) => {
+                    return <NewItem key={item.time} data={item} />;
+                })}
             </div>
         </div>
     );

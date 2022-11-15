@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    height: 786px;
+    padding: 100px;
+    background-image: url(https://www.minhtiencoffee.com/wp-content/themes/minhtien/assets/imgs/product-background.svg);
+    background-size: 100%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.heading {
+    width: 16.66666%;
+    color: var(--main-site-bakground);
+    font-size: 2.4rem;
+    font-family: var(--main-font-origin);
+}
+
+.detail {
+    width: 33.33333%;
+}
+.title {
+    color: var(--main-site-bakground);
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--main-font-coffee);
+    margin-bottom: 30px;
+}
+
+.content {
+    font-size: 1.6rem;
+    font-family: var(--main-font-coffee);
+    margin-bottom: 30px;
+}
+
+.wrap-img {
+    width: 50%;
+    object-fit: cover;
+    position: relative;
+    .img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

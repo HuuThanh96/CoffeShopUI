@@ -109,7 +109,11 @@ function Story() {
             </div>
             {/* part 3 */}
             <div className={cx('third-section')}>
-                <video className={cx('story-video')} ref={playBtn}>
+                <video
+                    className={cx('story-video')}
+                    ref={playBtn}
+                    poster="https://www.minhtiencoffee.com/wp-content/themes/minhtien/assets/imgs/tmp/video-thump-1.jpg"
+                >
                     <source
                         className={cx('video')}
                         src="https://www.minhtiencoffee.com/wp-content/uploads/2020/06/GIOI-THIEU.mp4"

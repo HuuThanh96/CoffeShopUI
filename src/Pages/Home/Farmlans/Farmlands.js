@@ -50,21 +50,16 @@ function Farmlands() {
         return () => clearInterval(timeID);
     }, [current]);
     return (
-        <div className={cx('farmlands-section')}>
-            <h3 className={cx('heading')}>FARMLANDS</h3>
-            {/* <button className={cx('pre-slide')}></button> */}
-            <div className={cx('container')}>
-                <div className={cx('slides-land')}>
-                    {farmlandsData.map((data, i) => {
-                        let classNames = '';
-                        if (current === i) {
-                            classNames = 'active';
-                        }
-                        return <FarmlandItem key={data.name} data={data} className={classNames} />;
-                    })}
-                </div>
+        <div className={cx('container')}>
+            <div className={cx('slides-land')}>
+                {farmlandsData.map((data, i) => {
+                    let classNames = '';
+                    if (current === i) {
+                        classNames = 'active';
+                    }
+                    return <FarmlandItem key={data.name} data={data} className={classNames} />;
+                })}
             </div>
-            {/* <button className={cx('next-slide')}></button> */}
         </div>
     );
 }

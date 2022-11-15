@@ -47,9 +47,9 @@ function DefaultLayout({ children }) {
                     {showHeader && <Header valueScroll={currentValueScroll} />}
                 </div>
                 <div className={cx('container')}>
-                    <div className={cx('wrapper-sidebar')}>
+                    {/* <div className={cx('wrapper-sidebar')}>
                         <Saiderbar valueScroll={currentValueScroll} />
-                    </div>
+                    </div> */}
                     <div className={cx('content')}>{children}</div>
                 </div>
                 <div className={cx('wrapper-footer')}>

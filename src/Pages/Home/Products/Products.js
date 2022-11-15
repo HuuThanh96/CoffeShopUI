@@ -28,40 +28,33 @@ function Products() {
 
     useEffect(() => {
         const timeID = setInterval(() => {
-            //     setCurrent((pre) => {
-            //         return pre >= productsData.length - 1 ? 0 : pre + 1;
-            //     });
-            // }, 5000);
             setShow((pre) => !pre);
         }, 3000);
         return () => clearInterval(timeID);
     }, []);
 
     return (
-        <div className={cx('products-section')}>
-            <h3 className={cx('heading')}>PRODUCTS</h3>
-            <div className={cx('container')}>
-                <div className={cx('product-slides')}>
-                    <div className={cx('product-slide')}>
-                        {show && <ProductItem data={productsData[0]} />}
-                        {!show && <ProductItem data={productsData[1]} />}
-                    </div>
+        <div className={cx('container')}>
+            <div className={cx('product-slides')}>
+                <div className={cx('product-slide')}>
+                    {show && <ProductItem data={productsData[0]} />}
+                    {!show && <ProductItem data={productsData[1]} />}
                 </div>
-                <div className={cx('wrapper-switch')}>
-                    <div className={cx('switch', show && 'active')}>
-                        <strong className={cx('switch-number')}>01</strong>
-                        <strong className={cx('switch-name')}>
-                            COFFEE
-                            <br /> ROASTERS
-                        </strong>
-                    </div>
-                    <div className={cx('switch', !show && 'active')}>
-                        <strong className={cx('switch-number')}>02</strong>
-                        <strong className={cx('switch-name')}>
-                            INSTANT
-                            <br /> COFFEE
-                        </strong>
-                    </div>
+            </div>
+            <div className={cx('wrapper-switch')}>
+                <div className={cx('switch', show && 'active')}>
+                    <strong className={cx('switch-number')}>01</strong>
+                    <strong className={cx('switch-name')}>
+                        COFFEE
+                        <br /> ROASTERS
+                    </strong>
+                </div>
+                <div className={cx('switch', !show && 'active')}>
+                    <strong className={cx('switch-number')}>02</strong>
+                    <strong className={cx('switch-name')}>
+                        INSTANT
+                        <br /> COFFEE
+                    </strong>
                 </div>
             </div>
         </div>
