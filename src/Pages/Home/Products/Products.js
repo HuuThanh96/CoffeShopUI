@@ -34,7 +34,7 @@ function Products() {
     }, []);
 
     return (
-        <div className={cx('container')}>
+        <div className={cx('container', 'pd-mb-container')}>
             <div className={cx('product-slides')}>
                 <div className={cx('product-slide')}>
                     {show && <ProductItem data={productsData[0]} />}

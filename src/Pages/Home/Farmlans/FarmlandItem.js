@@ -12,7 +12,7 @@ function FarmlandItem({ data, className }) {
                 <img className={cx('img')} src={data.src} />
             </div>
             <div className={cx('detail')}>
-                <h3 className={cx('name')}>{data.name}</h3>
+                <h3 className={cx('name', 'mb-heading')}>{data.name}</h3>
                 <div className={cx('detail-item')}>
                     <h6 className={cx('title')}>LOCATION</h6>
                     <p className={cx('value')}>{data.location}</p>

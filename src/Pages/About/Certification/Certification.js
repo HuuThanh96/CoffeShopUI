@@ -6,7 +6,7 @@ const cx = classNames.bind(style);
 
 function Certification() {
     return (
-        <div className={cx('container')}>
+        <div className={cx('container', 'pd-container')}>
             <h1 className={cx('heading')}>DEDICATION TOWARD INNOVATIONS</h1>
             <p className={cx('content')}>
                 For 20 years of knowledge accumulation and mastering coffee, Minh Tien Coffee aims to be recognized

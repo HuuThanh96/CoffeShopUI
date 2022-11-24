@@ -50,7 +50,7 @@ function Farmlands() {
         return () => clearInterval(timeID);
     }, [current]);
     return (
-        <div className={cx('container')}>
+        <div className={cx('container', 'pd-mb-container')}>
             <div className={cx('slides-land')}>
                 {farmlandsData.map((data, i) => {
                     let classNames = '';

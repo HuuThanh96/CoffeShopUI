@@ -126,15 +126,14 @@
     min-height: 625px;
     padding: 65px 375px 140px 0;
     position: relative;
-
-    .up-icon {
-        color: var(--main-site-bakground);
-        position: absolute;
-        top: 40px;
-        left: 17%;
-        &:hover {
-            cursor: pointer;
-        }
+}
+.up-icon {
+    color: var(--main-site-bakground);
+    position: absolute;
+    top: 40px;
+    left: 17%;
+    &:hover {
+        cursor: pointer;
     }
 }
 .down-icon {
@@ -197,5 +196,28 @@
         &.active-content {
             display: block;
         }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .first-section {
+        padding: 0 70px;
+    }
+    .second-section {
+        padding: 0 70px 0 70px;
+        .story-list {
+            display: flex;
+            flex-direction: column;
+        }
+        .story-item {
+            width: 100%;
+            min-height: 200px;
+            padding-right: 25px;
+        }
+    }
+    .up-icon {
+        left: 25%;
+    }
+    .down-icon {
+        left: 25%;
     }
 }

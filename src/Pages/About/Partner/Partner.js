@@ -6,7 +6,7 @@ const cx = classNames.bind(style);
 
 function Certification() {
     return (
-        <div className={cx('container')}>
+        <div className={cx('container', 'pd-container')}>
             <h1 className={cx('heading')}>AMBITION FOR GLOBAL MARKET</h1>
             <p className={cx('content')}>
                 We supply coffee for leading organizations and distributors, both global and domestic. We know coffee

@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    min-height: 804px;
+    min-height: 870px;
     padding: 60px 250px 160px 230px;
 }
 
@@ -87,4 +87,22 @@
     margin-bottom: 15px;
     color: var(--main-text-color);
     opacity: 0.8;
+}
+
+//responsive tablet
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding: 50px 30px 40px 30px;
+    }
+}
+
+//responsive mobile
+
+@media only screen and (max-width: 768px) {
+    .detail {
+        flex-wrap: wrap;
+        .detail-item {
+            width: 50%;
+        }
+    }
 }

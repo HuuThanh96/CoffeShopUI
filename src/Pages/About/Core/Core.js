@@ -41,7 +41,7 @@ const dataList = [
 function Core() {
     const [currentData, setCurrentData] = useState(0);
     return (
-        <div className={cx('container')}>
+        <div className={cx('container', 'pd-container')}>
             <div className={cx('list-heading')}>
                 <h5 className={cx('title')}>We keep our brand integrity base on our core values</h5>
                 <div className={cx('wrap-heading')}>

@@ -5,6 +5,8 @@ import styles from './Header.module.scss';
 import Menu from '../../../components/Menu';
 import SubMenu from './SubMenu';
 import routes from '../../../config/routes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
@@ -65,6 +67,7 @@ const menuItems = [
 function Header({ valueScroll }) {
     const [showSubMenu, setShowSubMenu] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
+    const [showTabletMenu, setShowTabletMenu] = useState(true);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -77,6 +80,14 @@ function Header({ valueScroll }) {
     return (
         <>
             <div className={cx('header-inner')}>
+                <button className={cx('btn-menu')} onClick={() => setShowTabletMenu(!showTabletMenu)}>
+                    {showTabletMenu ? (
+                        <FontAwesomeIcon className={cx('bars-icon')} icon={faBars} />
+                    ) : (
+                        <FontAwesomeIcon className={cx('xmark-icon')} icon={faXmark} />
+                    )}
+                </button>
+
                 <Link to={routes.home} className={cx('wrapper-logo')}>
                     <img
                         className={cx('logo')}
@@ -106,6 +117,29 @@ function Header({ valueScroll }) {
                     </Menu>
                 </div>
             </div>
+            {!showTabletMenu && (
+                <div className={cx('tablet-menu', 'active-tablet-menu')}>
+                    {menuItems.map((item, index) => (
+                        <div key={item.path} className={cx('tablet-menu-item')}>
+                            <Link
+                                to={item.path}
+                                className={cx('tablet-menu-title')}
+                                // onClick={() => {
+                                //     setCurrentPage(index);
+                                //     setShowSubMenu(true);
+                                // }}
+                                // onMouseEnter={() => {
+                                //     setCurrentPage(index);
+                                //     setShowSubMenu(true);
+                                // }}
+                            >
+                                {item.title}
+                            </Link>
+                        </div>
+                    ))}
+                </div>
+            )}
+
             {showSubMenu && (
                 <div className={cx('submenu-wrap')}>
                     {menuItems.map((item, index) => {

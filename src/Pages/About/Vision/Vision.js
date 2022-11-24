@@ -6,7 +6,7 @@ const cx = classNames.bind(style);
 function Vision() {
     return (
         <div className={cx('container')}>
-            <div className={cx('first-section')}>
+            <div className={cx('first-section', 'pd-container')}>
                 <div className={cx('wrap-list')}>
                     <h3 className={cx('heading')}>Vision</h3>
                     <div className={cx('detail')}>

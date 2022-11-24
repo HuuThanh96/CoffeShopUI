@@ -6,7 +6,7 @@ import TextBtn from '../../../components/TextBtn';
 const cx = classNames.bind(style);
 function Instant() {
     return (
-        <div className={cx('container')}>
+        <div className={cx('container', 'pd-container')}>
             <div className={cx('wrap')}>
                 <h1 className={cx('heading')}>INSTANT COFFILIA</h1>
                 <div className={cx('detail')}>

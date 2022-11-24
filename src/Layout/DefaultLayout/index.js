@@ -37,13 +37,7 @@ function DefaultLayout({ children }) {
     return (
         <>
             <div className={cx('wrapper')}>
-                <div
-                    className={cx('wrapper-header', classes)}
-                    onBlur={() => {
-                        setShowHeader(false);
-                        setClasses('');
-                    }}
-                >
+                <div className={cx('wrapper-header', classes)}>
                     {showHeader && <Header valueScroll={currentValueScroll} />}
                 </div>
                 <div className={cx('container')}>
@@ -52,7 +46,7 @@ function DefaultLayout({ children }) {
                     </div> */}
                     <div className={cx('content')}>{children}</div>
                 </div>
-                <div className={cx('wrapper-footer')}>
+                <div className={cx('wrapper-footer', 'pd-container')}>
                     <Footer />
                 </div>
             </div>

@@ -6,7 +6,7 @@ import TextBtn from '../../../components/TextBtn';
 const cx = classNames.bind(style);
 function Roasted() {
     return (
-        <div className={cx('container')}>
+        <div className={cx('container', 'pd-container')}>
             <div className={cx('wrap')}>
                 <h1 className={cx('heading')}>ROASTED GROUND COFFILIA</h1>
                 <div className={cx('detail')}>

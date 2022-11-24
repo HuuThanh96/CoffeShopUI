@@ -129,7 +129,7 @@ function Story() {
                 <p className={cx('description')}>WATCH VIDEO</p>
             </div>
             {/* part 4 */}
-            <div className={cx('fourth-section')}>
+            <div className={cx('fourth-section', 'pd-container')}>
                 <h1 className={cx('fourth-section-heading')}>
                     THE JOURNEY ACROSS
                     <br />
@@ -152,7 +152,7 @@ function Story() {
                 </div>
             </div>
             {/* part 5 */}
-            <div className={cx('fifth-section')}>
+            <div className={cx('fifth-section', 'pd-container')}>
                 <FontAwesomeIcon
                     icon={faChevronUp}
                     className={cx('up-icon')}
