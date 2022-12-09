@@ -11,13 +11,15 @@ function Shop({ hidren }) {
         <>
             <div className={cx('container')}>
                 <div className={cx('info-list')}>
-                    <div className={cx('info-item')}>
-                        <h6 className={cx('info-title')}>number of branches</h6>
-                        <p className={cx('info-number')}>06</p>
-                    </div>
-                    <div className={cx('info-item')}>
-                        <h6 className={cx('info-title')}>STAFF</h6>
-                        <p className={cx('info-number')}>84</p>
+                    <div className={cx('wrap-item')}>
+                        <div className={cx('info-item')}>
+                            <h6 className={cx('info-title')}>branches</h6>
+                            <p className={cx('info-number')}>06</p>
+                        </div>
+                        <div className={cx('info-item')}>
+                            <h6 className={cx('info-title')}>STAFF</h6>
+                            <p className={cx('info-number')}>84</p>
+                        </div>
                     </div>
                     <div className={cx('info-item')}>
                         <p className={cx('info-content')}>

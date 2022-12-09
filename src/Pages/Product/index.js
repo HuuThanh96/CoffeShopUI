@@ -35,9 +35,9 @@ function Product() {
                     />
                 </video>
                 <div className={cx('intro-title')}>
-                    <h1 className={cx('heading')}>Exceptional quality from</h1>
-                    <h1 className={cx('heading')}> craftsmanship elevated by</h1>
-                    <h1 className={cx('heading')}> indigenous culture</h1>
+                    <h1 className={cx('heading', 'mb-heading')}>Exceptional quality from</h1>
+                    <h1 className={cx('heading', 'mb-heading')}> craftsmanship elevated by</h1>
+                    <h1 className={cx('heading', 'mb-heading')}> indigenous culture</h1>
                 </div>
                 <a href="#story" className={cx('wrap-button-next')}>
                     <img

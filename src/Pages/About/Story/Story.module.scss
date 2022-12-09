@@ -94,7 +94,7 @@
 
 .fourth-section {
     width: 100%;
-    min-height: 765px;
+    // height: 765px;
     padding: 120px 70px 275px 250px;
     background-color: var(--main-site-bakground);
     .fourth-section-heading {
@@ -198,6 +198,8 @@
         }
     }
 }
+
+// responsive tablet
 @media only screen and (max-width: 1024px) {
     .first-section {
         padding: 0 70px;
@@ -219,5 +221,90 @@
     }
     .down-icon {
         left: 25%;
+    }
+}
+
+// responsive mobile
+@media only screen and (max-width: 768px) {
+    //part 2
+    .second-section {
+        flex-direction: column;
+        .title {
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        .story-list {
+            width: 100%;
+            padding: 0;
+        }
+        .story-item {
+            padding: 0;
+        }
+    }
+    //part 3
+    .third-section {
+        margin-top: 20px;
+    }
+    //part 4
+
+    .fourth-section {
+        min-height: 600px;
+        .fourth-section-heading {
+            margin-bottom: 20px;
+        }
+        .fourth-section-detail {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 25px;
+            .fourth-section-content {
+                width: 100%;
+                padding: 0;
+
+                margin-bottom: 20px;
+            }
+        }
+    }
+    //part 5
+    .fifth-section {
+        width: 100%;
+        min-height: 400px;
+    }
+    .up-icon {
+        color: var(--main-site-bakground);
+        position: absolute;
+        top: 40px;
+        left: 25%;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .down-icon {
+        color: var(--main-site-bakground);
+        position: absolute;
+        bottom: 20px;
+        left: 25%;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .wrap-silde {
+        display: flex;
+        max-height: 300px;
+        overflow: hidden;
+    }
+
+    .switch-heading {
+        color: var(--main-site-bakground);
+        font-size: 2rem;
+        font-family: var(--main-font-origin);
+        margin: 23px 0 30px 0;
+    }
+    .switch-year {
+        .year-item {
+            font-size: 40px;
+        }
     }
 }

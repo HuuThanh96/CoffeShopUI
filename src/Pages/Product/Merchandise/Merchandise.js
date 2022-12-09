@@ -6,11 +6,12 @@ import TextBtn from '../../../components/TextBtn';
 const cx = classNames.bind(style);
 function Merchandise() {
     return (
-        <div className={cx('container', 'pd-container')}>
+        <div className={cx('container', 'pd-mb-container')}>
             <div className={cx('wrap-heading')}>
-                <h1 className={cx('heading')}>For years, Minh Tien has grown into a favorite</h1>
-                <h1 className={cx('heading')}>lifestyle brand, gathering unique forms that</h1>
-                <h1 className={cx('heading')}>represent cultural creativity.</h1>
+                <h1 className={cx('heading')}>
+                    For years, Minh Tien has grown into a favorite lifestyle brand, gathering unique forms that
+                    represent cultural creativity.
+                </h1>
             </div>
             <div className={cx('line')}>
                 <img

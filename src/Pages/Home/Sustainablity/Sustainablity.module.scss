@@ -54,11 +54,23 @@
 }
 .wrapper-img {
     min-width: 100%;
-    height: 800px;
+    max-height: 800px;
     padding: 60px 20px 30px 20px;
     object-fit: cover;
 }
 .img {
     width: 100%;
     height: 100%;
+}
+//responsive mibile
+@media only screen and (max-width: 768px) {
+    .block-list {
+        min-width: 500px;
+    }
+    .title {
+        margin-bottom: 20px;
+    }
+    .img {
+        height: 70%;
+    }
 }

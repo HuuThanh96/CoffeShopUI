@@ -65,8 +65,8 @@ function Story() {
         <div className={cx('container')}>
             {/* part 1 */}
             <div className={cx('first-section')}>
-                <h1 className={cx('heading')}>AUTHENTIC COFFEE</h1>
-                <h1 className={cx('heading')}>FROM THE MISTY MOUNTAINS</h1>
+                <h1 className={cx('heading', 'mb-heading')}>AUTHENTIC COFFEE</h1>
+                <h1 className={cx('heading', 'mb-heading')}>FROM THE MISTY MOUNTAINS</h1>
             </div>
             <img
                 className={cx('wrap-img')}

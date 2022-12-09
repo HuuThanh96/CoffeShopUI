@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .wrap-logo {
@@ -38,4 +38,21 @@
     font-size: 16px;
     font-weight: 400;
     font-family: var(--main-font-coffee);
+}
+
+//responsive tablet
+@media only screen and (max-width: 1024px) {
+    .content {
+        padding-right: 20px;
+    }
+}
+//responsive mobile
+@media only screen and (max-width: 768px) {
+    .inner-footer {
+        display: flex;
+        flex-direction: column;
+        .content {
+            padding-right: 10px;
+        }
+    }
 }
